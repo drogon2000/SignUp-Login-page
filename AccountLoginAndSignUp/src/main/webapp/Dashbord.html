@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title></title>
+       <style type="text/css">
+              .h1
+              {
+                     align-content: center;
+              }
+              .f1 
+              {
+                     align-content: center;
+
+              }
+       </style>
+      
+
+</head>
+<body> 
+       <center>
+          <div>
+                     <table border="2px" class="size"  width=700px height= 400px>
+              <tr  height="20px"  >
+                    
+                            <td colspan="3" height="100px" width="40px"> 
+                            <p> current Time:- <span id="datetime"></span></p>
+                             <p>Last Login time:-<span id="ltime"></span></p>
+                      <script>
+                           var dt = new Date();
+                     document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();     </script> 
+                      <script>
+                           var lt = new Date();
+                     document.getElementById("ltime").innerHTML = dt.toLocaleTimeString();     </script> 
+                        
+                        
+                      </td>
+                      <td><form  action="Home" method="post"><input class="f1" type="submit"  value="Log Out"class="h1"></form></td>
+
+                            
+              
+              </tr>
+              <tr>
+                     <td width=100px height="20px">Add Task</td>
+              </tr>
+              <tr height="25px" >
+                    <form action="abc" method="get"> <td colspan="4"><input type="text" name="description" placeholder="Descriptions"> <input type="text" name="attachment" placeholder="Attachment"> <input type="file" name="addattachment" placeholder="add attachment"><input type="submit" name="sub"> </td></form>
+                     </tr>
+               <tr  >
+                     <td colspan="4"></td>
+                     
+                     
+                     
+              </tr>
+              <tr>
+                     <td width=10px height="20px">All Tasks</td>
+                     <td colspan="2"></td>
+                      <td width=10px height="20px"> <input type="button" name="refresh" onclick="refresh" value="refresh"  > </td>
+                      <tr height="25px" >
+                      <form> <td colspan="4"><input type="text" name="desc" placeholder="Descriptions"> <input type="text" name="att" placeholder="Attachment"> <input type="file" name="file" placeholder="add attachment"><input type="submit" name="sub"> </td></form>
+                     
+              </tr>
+
+              </tr>
+               
+               <tr  >
+                     <td colspan="4"></td>
+                     
+              </tr>
+
+              
+              
+              </table>
+       </div>
+              </center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up Page</title>
+ <style type="text/css">
+              .h1
+              {
+                     background-color: royalblue;
+                     width: 200px;
+                     height: 30px;
+                     border-radius: 5px;
+                     font-weight: bolder;
+                     color: white;
+                     margin-top: 10px;
+              }
+       </style>
+</head>
+<body>
+       <div>
+        <center>
+       	<form action="savelogin" method="get">
+            		<fieldset>
+            			<legend align="center" style="color: royalblue; font-weight: bolder;">Fields</legend>
+            			<label>Name<sup style="color: red;">*</sup> </label>
+            			<input type="text" name="name"   placeholder="Name">
+            			<br><br>
+            			<label for="un">Address</label>
+            			<input type="text" name="address" autocomplete="of" placeholder="Address">
+            			<br><br>
+            			<label>Email<sup style="color: red;">*</sup> </label>
+            			<input type="Email" name="email"  placeholder="abc@123">
+            			<br><br>
+            			<label for="dob">DOB :</label>
+                        <input type="date" name="dob">
+                        <br><br>
+                        <label>Username<sup style="color: red;">*</sup> </label>
+            			<input type="Email" name="username"  placeholder="Username">
+            			<br><br>
+                        <label >Password<sup style="color: red;">*</sup> :</label>
+                        <input type="Password" name="pass" >
+                        <br><br>
+                        <input type="submit" name="Create User" value="Create User"class="h1">
+                       <form action="CheckLogIn" method="post"> <input type="submit" name="log" value="Login Page"class="h1"></form>
+                       <form action="Home" method="post"> <input type="submit" value="Home Page"class="h1"></form>
+                        
+            		</fieldset>
+            	</form>
+       </center>
+       
+       </div>
+</body>
+</html>

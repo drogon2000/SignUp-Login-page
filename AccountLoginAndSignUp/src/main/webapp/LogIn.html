@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+ <style type="text/css">
+              .h1
+              {
+                     background-color: royalblue;
+                     width: 200px;
+                     height: 30px;
+                     border-radius: 5px;
+                     font-weight: bolder;
+                     color: white;
+                     margin-top: 10px;
+              }
+       </style>
+</head>
+<body>
+<div>
+       <center>	<form action="cklog" method="get">
+       		<fieldset>
+       			<legend align="center " style="color: royalblue; font-weight:bolder ;" > LOGIN PAGE </legend>
+       			<label for="un">Username <sup style="color: red;">*</sup> </label>
+       			<input type="text" name="username" placeholder="abc"  required autofocus><br><br>
+       			<label>Password :</label>
+       			<input type="Password" name="pass" size="7"><br><br>
+       			
+       			<input type="submit" name="lgn" value="LOGIN" class="h1">
+       			<form action="CheckSignUp" method="post"><input type="submit" name="sub" value="Sign Up" class="h1"></form>
+       			<form action="Home" method="post"><input type="submit" name="hp" value="Home Page" class="h1"></form><br><br>
+       		
+       			
+       		</fieldset>
+       	</form></center>
+       </div>
+</body>
+</html>
